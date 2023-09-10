@@ -1,0 +1,10 @@
+{
+    "language": {
+        "language": "en" // en or de
+    },
+    "ai": {
+        "openai_key": "OPENAI API KEY",
+        "azure_key": "AZURE SPEECH SERVICE KEY",
+        "azure_region": "AZURE SPEECH SERVICE REGION"
+    }
+}
