@@ -1,6 +1,6 @@
 {
     "language": {
-        "language": "en" // en or de
+        "language": "en" # en OR de
     },
     "ai": {
         "openai_key": "OPENAI API KEY",
