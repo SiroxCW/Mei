@@ -3,8 +3,9 @@
         "language": "en" // en OR de
     },
     "ai": {
-        "openai_key": "OPENAI API KEY",
-        "azure_key": "AZURE SPEECH SERVICE KEY",
-        "azure_region": "AZURE SPEECH SERVICE REGION"
+        "openai_key": "YOUR OPENAI API KEY",
+        "azure_key": "YOUR AZURE SPEECH SERVICE KEY",
+        "azure_region": "YOUR AZURE SPEECH SERVICE REGION",
+        "octave_modifier": 1.55 // voice pitcher
     }
 }
