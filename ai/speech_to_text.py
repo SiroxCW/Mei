@@ -1,6 +1,5 @@
 
 def speech_to_text(key_azure, region_azure, lang):
-    from winsound import Beep
     import azure.cognitiveservices.speech as speechsdk
     from sys import exit
 
@@ -11,6 +10,8 @@ def speech_to_text(key_azure, region_azure, lang):
         speech_config.speech_recognition_language = "en-US"
     elif lang == "de":
         speech_config.speech_recognition_language = "de-DE"
+    elif lang == "de-CH":
+        speech_config.speech_recognition_language = "de-DE"
     else:
         print("[ERROR] Language not supported.")
         exit()
@@ -18,13 +19,10 @@ def speech_to_text(key_azure, region_azure, lang):
     audio_config = speechsdk.audio.AudioConfig(use_default_microphone=True)
     speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, audio_config=audio_config)
 
-    Beep(300, 150)
     speech_recognition_result = speech_recognizer.recognize_once_async().get()
 
     if speech_recognition_result.reason == speechsdk.ResultReason.RecognizedSpeech:
-        return speech_recognition_result.text
-    elif speech_recognition_result.reason == speechsdk.ResultReason.NoMatch:
-        print("No speech could be recognized: {}".format(speech_recognition_result.no_match_details))
+        return speech_recognition_result.text.replace("enemy", "anime").replace("enemies", "animes").replace("Enemy", "Anime").replace("Enemies", "Animes")
     elif speech_recognition_result.reason == speechsdk.ResultReason.Canceled:
         cancellation_details = speech_recognition_result.cancellation_details
         print("Speech Recognition canceled: {}".format(cancellation_details.reason))
