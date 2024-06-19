@@ -1,11 +1,11 @@
 {
     "language": {
-        "language": "en" // en OR de
+        "language": "en"
     },
     "ai": {
         "openai_key": "YOUR OPENAI API KEY",
         "azure_key": "YOUR AZURE SPEECH SERVICE KEY",
         "azure_region": "YOUR AZURE SPEECH SERVICE REGION",
-        "octave_modifier": 1.55 // voice pitcher
+        "octave_modifier": 1.55
     }
 }
