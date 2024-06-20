@@ -1,5 +1,5 @@
 ## Mei
-This is an old fun python repository of mine. Speak with an artifical "girlfriend" using Azure Speech and OpenAI.
+This is an old fun python repository of mine. Speak with an artifical "girlfriend" using Azure Speech and OpenAI. She likes Anime... a lot...
 
 ### Usage
 Clone or download repository and change the config.json.
